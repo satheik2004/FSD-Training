@@ -1,0 +1,19 @@
+1)Arthimetic Operators
++,-,*//
+
+Division---/(Q)
+Modular Division---%(R)
+
+2)Logical Operators
+and-&&
+T and T=T
+or-||
+T or F=
+not--!
+
+3)Relational(Comparision) Operators
+<,>,>=,<=,==,===,!=,!==
+
+==---equality
+
+4)Ternary Operators
