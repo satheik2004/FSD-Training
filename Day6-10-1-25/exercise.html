@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        ///(1)check whether a number is divisible by 2,3 and both
+        // let a=parseInt(prompt("Enter a number"));
+        // if(a%2==0 && a%3==0){
+        //     alert(`${a} can be divisible by both 2 and 3`);
+        // }
+        // else if(a%3==0){
+        //     alert(`${a} can be divisible by 3`);
+        // }
+        // else if(a%2==0){
+        //     alert(`${a} can be divisible by 2`);
+        // }
+        // else{
+        //     alert(`${a} cannot be  divisible by 2 and 3`);
+        // }
+
+        ///(2)write a program to find the largest number out of three numbers expected from the user
+        // let a=parseInt(prompt("Enter the first number"));
+        // b=parseInt(prompt("Enter the second number"));
+        // c=parseInt(prompt("Enter the third number"));
+        // if(a>b && a>c){
+        //     alert(`${a} is the greatest number`);
+        // }
+        // else if(b>a && b>c){
+        //     alert(`${b} is the greatest number`);
+        // }
+        // else if(c>a && c>b){
+        //     alert(`${c} is the greatest number`);
+        // }
+
+        ///(3)calculate percentage of the classes attended
+        ///a.total working days
+        ///b.total number of days for absent
+        ///after calculating percentage show that, if the percentage is less than 75, then student will not eligible to write exam
+
+        let a=parseInt(prompt("Enter the total number of working days "));
+        b=parseInt(prompt("Enter the total number of days for absent"));
+        if(((a-b)/a)*100<75){
+            alert("student is not eligible to write the exam");
+        }
+        else{
+            alert("student is eligible to write the exam");
+        }
+
+
+
+
+    </script>
+</body>
+</html>
