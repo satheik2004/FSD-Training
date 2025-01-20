@@ -1,0 +1,16 @@
+Loops:
+--block of code
+
+Loops:Block of code several times
+
+1.for Loops
+2.for in
+3.for of
+4.while
+5.do while
+
+1.for Loops
+For(initialization;condition;update-expression){
+--block of code
+}
+
