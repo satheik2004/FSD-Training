@@ -1,0 +1,28 @@
+Syntax:
+
+While(consition){
+    --block of code
+}
+
+1.cond inside the ()
+2.{}
+3.false
+
+Syntax:
+do{
+    //block of code
+}while(condition){
+
+}
+
+
+Break and Continue
+
+Matches it will stop
+Example:
+for(let i=1;i<=5;i=i+1){
+    if(i==3){
+        break;
+    }
+    console.log(i);
+}
