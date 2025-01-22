@@ -1,0 +1,10 @@
+Nested Loops:
+
+ A loop inside another loop
+
+ The inner loop will execute one time for each iteration of outer loop
+ An inner loop within the repeating block of outer loop
+
+//outer loop
+
+#python 

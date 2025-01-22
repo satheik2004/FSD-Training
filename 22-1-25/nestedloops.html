@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const a=[1,2,3,4,5]
+        // for(i=1;i<=8;i++){
+        //     console.log(i);
+        //     for(i in a){
+        //         if(i==5){                                   //infinite loop  why......?
+        //             console.log(i);
+        //             break;
+        //         }
+        //     }
+        //     console.log(i);
+
+        // }
+
+        //outer loop
+        // for(let i=1;i<=3;i++){
+        //     document.write(i,"<br>");
+        //     //inner loop
+        //     for(let j=1;j<=4;j++){
+        //         document.write(j," ");
+
+        //     }
+        //     document.write("<br>");
+        // }
+
+        //right pyramid 
+
+        // for(let i=1;i<=5;i++){
+        //     for(let j=1;j<=i;j++){
+        //         document.write("*");
+        //     }
+        //     document.write("<br>");
+        // }
+             
+        //right pyramid
+
+        // for(let i=5;i>=1;i--){
+        //     for(let j=5;j>=i;j--){
+        //         document.write("*");
+        //     }
+        //     document.write("<br>")
+        // }
+
+        //reverse pyramid
+
+       
+
+        let n=5;
+        for(let i=1;i<=n;i++){
+            for(let j=1;j<=n-i;j++){
+                document.write("<br>")
+            }
+            for(let j=1;j<=2*i-1;j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>
