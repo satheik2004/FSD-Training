@@ -1,0 +1,16 @@
+Functions:
+A function is a reusability block of code
+It can be called anywhere in the program
+
+---Reusable code:using an existing code without writing it again 
+
+You can use the same code with different arguments to get the results
+
+
+JavaScript:
+Key Word=function
+()
+Parameters=values which are declared inside the () while defining a function
+
+Arguments:values which are passed through the Parameters
+
