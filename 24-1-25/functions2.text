@@ -1,0 +1,49 @@
+Functions:
+
+Arrow Functions:
+--Es6 version
+--more readable and more structure
+--annonymous function(lambda function)
+--without function name but they are assigned to a variable
+
+
+let c=()=>{
+    console.log("hi")
+}
+c()
+
+Synchronous and Asynchronous Functions
+
+Synchronous Function:
+--tasks execute after the predecessive task executes
+
+Asynchronous function:
+--multiple tasks at a time
+
+JavaScript callbacks:
+
+A call back function is a function that passes an argument to another function
+--Functions
+--oops
+--file handling
+--multithreading
+--exception handling--json
+
+Promise:
+three states
+--pending
+--fulfilled==task completed
+--rejected==operation failed
+
+Example:
+
+Let myPromise=new Promise((resolve,reject)=>{
+    let success=true;
+
+    if(success){
+        resolve("task completed")
+    }
+    else{
+        reject("task failed)
+    }
+})
