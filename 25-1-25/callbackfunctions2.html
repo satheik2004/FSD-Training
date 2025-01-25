@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         function mainFunction(callback){
+//     console.log("Executing the mainFunction");
+//     callback()
+// }
+
+// function callbackFunction(){
+//     console.log("callback function executed");
+// }
+// mainFunction(callbackFunction);
+
+// function greet(name,callback){
+//     console.log("hello"+name);
+//     callback();
+// }
+
+// function goodbye(){
+//     console.log("Bye");
+// }
+// greet("Ram",goodbye);
+
+// function greet(){
+//     console.log("hello");
+// }
+
+// function goodbye(){
+//     console.log("Bye");
+// }
+// greet();
+// goodbye();
+
+// function greet(name,callback){
+//     console.log("hello"+name);
+//     callback();
+// }
+
+// greet("ram",function(){
+//     console.log("goodbye");      //we don't pass a names function like (goodbye);
+// });                              //instead we defined an anoymous function directly i  greet function
+
+
+// function myFunction(name,callback){
+//     setTimeout(console.log(("Hello"+name)),2000);
+
+// }
+// myFunction("Ram",function(){
+// console.log("goodbye");
+// });
+
+// function fetchData(callback){
+//     console.log("Fetching Data")
+//     setTimeout(function(){
+//         console.log("Data Fetched");
+//         callback();
+//     },2000);
+// }
+// function processData(){
+//     console.log("Processing the fetched data");
+// }
+// fetchData(processData);
+
+// const nums=[1,2,3,4,5]
+// const d=nums.map(function(num){
+//     return num*2
+// });
+// console.log(d);
+
+
+function registerUser(username,email,callback){
+    console.log("registering user"+username);
+    setTimeout(function(){
+        console.log("user"+username+"reistered successfully");
+        callback(email);
+    },2000);
+    }
+
+function sendWelcomeEmail(email){
+    console.log("sending welcome email to"+email);
+};
+registerUser("Ram","123@mail.com",sendWelcomeEmail);
+
+    </script>
+</body>
+</html>
