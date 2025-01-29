@@ -1,0 +1,72 @@
+Example:
+    <h1 id="a">I am Sathwik Reddy</h1>
+    <h1 id="b">My age is 21</h1>
+    <h1 id="c">I am from Kadapa</h1>
+    <script>
+        var a = document.getElementById("a");
+        var b = document.getElementById("b");
+        var c = document.getElementById("c");
+        console.log(a);
+        console.log(b);
+        console.log(c);
+
+getElementByClassName():
+returns all the elements having the same class name
+
+getElemntByClassName():
+returns an HTML collection object
+An HTMLCollection is an array like list of HTML elements
+
+The length Property provides the size of collection.
+
+---Getting elements by Tag:
+
+var a = document.getElementsByTagName("h1");
+        var c = document.getElementsByTagName("h3");
+        console.log(a);
+        console.log(c);
+
+        for(let i=0;i<a.length;i++){
+            console.log(a[i]);
+        }
+
+--Getting elemnts by QuerySelector methods:
+
+The document query selector method select an HTML elemnts bt tagname,by id,class name
+QuerySelector:can be used to select HTML elemnt by its tagname,by id,class name;
+it selects the first element
+
+        var a = document.querySelector("h1");
+        var b = document.querySelector("b");
+        console.log(a);
+        console.log(b);
+
+QuerySelectorAll:
+--it selects all the HTML elemnts by its class name and tagname
+
+        var a = document.querySelectorAll("h1");
+        var b = document.querySelectorAll("h3");
+        console.log(a);
+        console.log(b);
+
+Manipulating Elements:
+To create HTML elements:
+
+createElement()-create a new element
+--method-document.cretaeElement()
+
+Single element:
+        let t=document.createElement('h2');
+        t.className="a";
+        t.textContent="I am Sathwik Reddy";
+        console.log(t);
+        document.body.appendChild(t);
+
+Multiple elements:
+        const a=['ravi','raju','ram'];
+        for(let i=0;i<a.length;i++){
+            let t=document.createElement('h1')
+            t.className="a"
+            t.textContent=a[i];
+            console.log(t);
+        }
