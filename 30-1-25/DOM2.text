@@ -1,0 +1,50 @@
+DOM:
+--get element by id,class,tag
+--queryselector methods
+--to create a element by using js:
+1.single element
+2.multiple elements
+
+Ex 1:
+
+To create multiple elements:
+const titles=["Ram","Ravi","Raju"]
+for(let i=0;i<=titles.length;i++){
+    titles=document.createElement('h2')
+    titles.className="a"
+    titles.textContent=titles
+    console.log(titles)
+}
+
+Ex 2:
+
+let title
+for(let i=0;i<3;i++){
+    title=document.createElement('h2')
+    title.className="tt"
+    title.textContent=id
+    console.log(title)
+}
+
+Removing a child element from a parent node:
+
+<h1>Removing Child Node</h1>
+<h1>I am Ram</h2>
+<ul>                      //ul=unordered list
+<li>Ravi</li>             //li=list items
+<li>Raju</li>
+<li>Reo</li>                      
+</ul>
+
+<script>
+const ul=document.querySelector('ul')
+const lists=document.querySelectorAll('li')
+for(const list of lists){
+    console.log(`Removing:${list.textContent}`)
+    ul.removeChild(list);
+}
+</script>
+
+To append a new element:
+
+append()-to append a new element
