@@ -1,0 +1,8 @@
+DOM:
+
+1)cretae a new element (Single , Multiple)
+2)append a child node to parent node
+--add the element at the getElementById
+3)InsertBefore():insert a new node before an existing node or child node of  a specififc parent node
+--this requires a reference to both the new node and the existing node you want to insert before
+
