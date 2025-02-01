@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //voting eligibility scenario
+        // let i=parseInt(prompt("Enter your age"));
+        // let j=prompt("Do you have citizen ship? yes or no");
+        // if(i<18){
+        //     console.log("You are not eligible for voting");
+        // }
+        // else if(i>=18 && j=="yes"){
+        //     console.log("You are eligible for voting");
+        
+        // }
+        // else if(i>=18 && j=="no"){
+        //     console.log("You are eligible for voting");
+        // }
+        // else{
+        //     console.log("Invalid input");
+        // }
+
+        //discount eligibility
+        let i=parseInt(prompt("Enter the amount"));
+        let j=prompt("Are you a premium member? (yes or no:)"=="yes"); 
+    
+        let d=0;
+        if(i>100){
+            console.log("You receive 20% discount");
+
+        }
+        else if(i>50 && i<=100){
+            console.log("You receive 10% discount ");
+        }
+        else{
+            console.log("You receive no discount");
+        }
+        if(j){
+            console.log("You receive 5% extra discount");
+        }
+        
+
+    </script>
+</body>
+</html>
