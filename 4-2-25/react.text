@@ -1,0 +1,46 @@
+To create an element by React JS:
+--React.createElement('h1')
+
+Syntax:
+React.createElement(type,prop)
+--type=tag name(div,h1,p)
+--props=className,id,onClick
+----ReactDOM.createRoot()
+----ReactDom.render() -to display the element
+
+Intro to JSX:
+(JavaScript XML) is a syntax extension for js in react js;it allows us to write html code in react 
+--allows us easier to write HTML in react
+
+JSX:JSX code gets compiled into JS 
+Babel:a tool that converts the HTMl into the JavaScript
+
+Keypoints:
+<br/>
+<img/>
+class=className
+
+Expressions in jsx:
+with JSX,you can write the expressions
+this allows us to embbed the elements easily
+
+using a function call:
+you can call the function call directly within the JSX expressions
+
+<div id="a"></div>
+<script type="text/babel">
+function getGreeting(name){
+    return `Hello,${name}`
+}
+
+//component that uses the function in JSXfunction Greeting(){
+    const name="Sathwik"
+    return <h1>{getGreeting(name)}
+
+    //calling a function in JSX
+}
+
+//create a root and render the Greeting component
+cosnt root=ReactDOM.createRoot(document.getElementById("a"));
+root.render(</Greeting>)
+</script>

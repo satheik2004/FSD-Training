@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- <div id="root"></div>
+    <script src="a.js"></script>
+    <br>
+    <h1>I am Sathwik<br>Reddy</h1> -->
+
+    <!-- //with JSX -->
+    <!-- <div id="app"></div>
+    <script type="text/babel">
+        //with JSX
+        const element=<h1 className="a">Hello World</h1>
+        const root=ReactDOM.createRoot(document.getElementById("app"))
+        root.render(element) -->
+     <!-- </script> -->
+
+        <!-- //without JSX -->
+        <!-- <div id="app"></div>
+        <script>
+            const element=React.createElement("h1",{className:"a"},"Hello World")
+            const root=ReactDOM.createRoot(document.getElementById("app"))
+            root.render(element)
+
+        </script> -->
+
+        <!-- <div id="a"></div>
+
+        <script type="text/babel">
+            const n=10;
+            const m=<h1>React is {n*2} times better than Angular</h1>
+            const root=ReactDOM.createRoot(document.getElementById("a"))
+            root.render(m)
+        </script>
+         -->
+        
+        
+         <!-- <div id="a"></div>
+         <script type="text/babel">
+         function getGreeting(name){
+             return `Hello,${name}`
+         }
+         
+         //component that uses the function in JSXfunction Greeting(){
+         function Greeting(){
+             const name="Sathwik"
+             return <h1>{getGreeting(name)}</h1>;
+         
+             //calling a function in JSX
+         }
+         
+         //create a root and render the Greeting component
+         const root=ReactDOM.createRoot(document.getElementById("a"));
+         root.render(<Greeting />);
+         </script> -->
+
+</body>
+</html>
