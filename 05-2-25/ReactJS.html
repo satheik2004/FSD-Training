@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!--with JSX-->
+    <!-- <div id="a"></div>
+    <script type="text/babel">
+    const element=<h1>I am Sathwik Reddy</h1>
+    const e=document.getElementById("a")
+    const root=ReactDOM.createRoot(e)
+    root.render(element)
+    </script> -->
+
+    <!--without JSX-->
+    <!-- <div id="app"></div>
+<script>
+     const element=React.createElement("h1",{className:"a"},"Hello World")
+            const root=ReactDOM.createRoot(document.getElementById("app"))
+            root.render(element)
+
+</script> -->
+
+<!-- Expressions
+<div id="a"></div>
+<script type="text/babel">
+    const n=10;
+    const m=<h1>React is {n*2} times better than Angular</h1>
+    const root=ReactDOM.createRoot(document.getElementById("a"))
+    root.render(m)
+</script> -->
+
+<div id="a"></div>
+<script type="text/babel">
+    const App=()=>{
+    const isLoggedIn = prompt("Did you login? Yes or No" ) === "yes";
+   return(
+        <div>
+            {isLoggedIn ? <h1>Welcome User</h1> : <h1>Please LOGIN</h1>}
+            {isLoggedIn && <h1>You have a new mail</h1>}
+
+        </div>
+   )
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("a"));
+    root.render(<App/>);
+
+    
+</script>
+
+
+    
+</body>
+</html>

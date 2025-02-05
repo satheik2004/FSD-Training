@@ -1,0 +1,9 @@
+JSX:
+JavaScript XML is a syntax extension for JS
+It allows us to write HTML code in React
+
+The JSX code gets compiled into JS
+Babel:A tool converts HTML code in JS
+---all the HTML tags must be closed
+
+conditional rendering in JSX:
