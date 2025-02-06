@@ -1,0 +1,13 @@
+Public/index.html:
+The main html file that serves as the entry point for the app
+
+src/index.js:
+---The javascript entry point for the react app where the DOM is rendered
+src/App.js:
+---It is the main component that serves as the root of the component tree
+src/Components.js:
+---A folder to store reusable Components
+
+1)Components:(core building blocks of a react application)
+---Helps to create reusable block of code
+---if anything goes wrong in UI,it is very esy to findout and solve errors 
