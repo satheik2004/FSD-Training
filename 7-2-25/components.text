@@ -1,0 +1,65 @@
+Conditional Rendering
+
+//App.js
+import React from 'react';
+
+import Wish from './Wish'
+function App(){
+  const isLoggedIn=false;
+  return(
+    <div className='App'>
+      <Wish isLoggedIn={isLoggedIn}/>
+    </div>
+    
+  )
+}
+export default App;
+
+//Wish.js
+import React from 'react';
+
+const Wish = ({ isLoggedIn }) => {
+    if(isLoggedIn){
+        return <h1>Welcome Back! User!</h1>
+    }
+    else{
+        return <h1>Please LOGIN User!</h1>
+    }
+}
+
+export default Wish;
+
+#lists:
+--In React a list is a collection of items you want to show on screen 
+
+#keys:
+--keys in react helps us to keep track of items in a list 
+--React know which items you have changed;updated
+
+#map():
+--elements in an array function will be applied to all elements
+
+const n=[1,2,3,4,5]
+const d=n.map(num=>num*2)
+console.log(d)
+
+#2,4,6,8,10
+
+#Removing the elements from array
+import React from 'react';
+
+const RemoveFruitList=()=>{
+    let i=prompt("Enter the index of the fruit to be removed");
+    const fruits=['Apple','Banana','Mango','Orange','Grapes'];
+    fruits.splice(i,1);
+    return(
+        <div>
+            <h1>Fruits List</h1>
+            <ul>
+                {fruits.map((fruit,index)=><li key={index}>{fruit}</li>)}
+            </ul>
+        </div>
+    )
+
+}
+export default RemoveFruitList;
