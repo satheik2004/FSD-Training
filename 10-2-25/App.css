@@ -1,0 +1,21 @@
+/* .s{
+  color:grey;
+  background-color: black;
+  text-align: center;
+  font-size: 100px;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-top: 300px;
+  margin-bottom: 300px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+} */
+
+.counter{
+  margin-top: 300px;
+  text-align: center;
+}
+.inc{
+  background-color: grey;
+  
+}
