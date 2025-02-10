@@ -1,0 +1,17 @@
+React Hooks:
+--introduced on react 16.8 version
+--to manage state and life cycle features in functional components
+
+
+State:
+--is an essential part in react because it allows components to be dynamic,interactive and cappable of responding to user imput or 
+change overtime
+
+1)useState Hook:
+--allows us to add state to functional components
+
+Syntax:
+const [state,setState]=useState(initial value)
+state:This is current state
+setState:This is a function to update the state
+initial value:The value you want to set as the initial value
