@@ -1,0 +1,5 @@
+React Memorization:
+--apps faster by remembering the result
+--useMemo hook to store the functions
+
+Ex:E-Commerce search by using memeorization
