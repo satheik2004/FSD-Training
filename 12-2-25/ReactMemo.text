@@ -1,0 +1,48 @@
+React Memo:
+--it is a HOC(High Order Component) 
+--it is not a React Hook
+--it will stop the unnecessary rendering of the functional components of its props
+--it will improve the perfromance of the functional components
+
+App.js
+import React from 'react';
+import Child1 from './Child1';
+import Child2 from './Child2';
+
+const Parent=()=>{
+  const [count,setCount]=React.useState(0);
+  
+  const increment = () => setCount(count + 1);
+
+  return(
+    <div>
+      <h1>Count:{count}</h1>
+     
+      <Child1/>
+      <Child2 count={count} increment={increment}/>
+    </div>
+  )
+}
+export default Parent;
+
+Child1.js  ///without Memo
+
+const Child1=(props)=>{
+    console.log('Child1 Rendered');
+    return <h1>this is Child1</h1>
+}
+export default Child1;
+
+Child2.js  ///without Memo
+
+const Child2=({increment})=>{
+    console.log('Child2 Rendered');
+    return(
+        <div>
+            
+            <button onClick={increment}>Increment</button>
+        </div>
+    )
+}
+
+export default Child2;
