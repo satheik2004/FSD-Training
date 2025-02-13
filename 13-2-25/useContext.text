@@ -1,0 +1,5 @@
+useContext():
+--props(properties) in React are used to pass data from parent component to child component
+
+Prop drilling is the process of passing data from parent component to deeply(nested) child component through immediate component by 
+passing data as props at each leevl
