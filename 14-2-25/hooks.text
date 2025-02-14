@@ -1,0 +1,18 @@
+React Hooks:
+
+React Reducer();
+Callback()
+
+React Reducer();
+A reducer is a function that helps to update (like score,a list) based on the action we take 
+1)current State:The current value of a State
+2)Action:function that state should perform
+Example:
+Action--add or remove an item
+State--initial value
+
+Callback in React:
+--in react, a callback is function that is passed as an argument to another function
+--callbacks are often to communicate with different components
+
+Ex:A parent component passing as a Callabck to a child
