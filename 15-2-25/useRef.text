@@ -1,0 +1,17 @@
+useRef:
+
+useState:
+--change the state; React will render the component and update the UI with the new element
+
+useRef:
+--changing the value by using useRef does not re-render;
+--stays the same even the value is updated
+
+useRef:
+--when you change the value stored in ref.current
+--it does not make the component render
+This si useful when you need to store values or interact with DOM elements without extra renders
+
+Commonly Used:
+1)Accessing a DOM element:like scrolling screen
+2)Storing Values:keep track of values that don't need to update the UI but need to rememberd the previous state
