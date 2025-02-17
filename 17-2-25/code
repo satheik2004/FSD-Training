@@ -1,0 +1,56 @@
+//////onClick event handling
+
+// import React from 'react';
+
+// const App=()=>{
+//     const handleClick=()=>{
+//         alert('Button Clicked');
+//     }
+//     return(
+//         <div>
+//             <h1>Event Handling</h1>
+//             <button onClick={handleClick}>Click Me</button>
+//         </div>
+//     )
+// }
+
+// export default App;
+
+/////onChange event handling
+
+// import React, { useState } from 'react';
+
+// const App=()=>{
+//     const[text,setText]=useState('hello');
+//     const handleChange=(e)=>{
+//         setText(e.target.value);
+//     }
+//     return(
+//         <div>
+//             <h1>Input Field</h1>
+//             <input type='text' value={text} onChange={handleChange}/>
+//             <h2>{text}</h2>
+//         </div>
+//     )
+// }
+// export default App;
+
+///////onMouseEnter and onMouseLeave event handling
+import React,{useState} from 'react';
+
+const App=()=>{
+    const[isHovered,setIsHovered]=useState(false);
+    const onMouseEnter=()=>{
+        setIsHovered(true);
+    }
+    const onMouseLeave=()=>{
+        setIsHovered(false);
+    }
+    return(
+        <div>
+            <h2 style={{backgroundColor:'grey'}}>{isHovered ? 'Hovered' : 'Not Hovered'}</h2>
+            <button onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>Hover Over Me</button>
+        </div>
+    )
+}
+export default App;
