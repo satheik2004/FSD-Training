@@ -1,0 +1,29 @@
+Event Handling in React:
+---Event handling in react is how you make your app do something when the user interacts with it,
+Like clicking a button,submitting a form
+--clicking a button
+--pressing a key
+--moving the mouse
+--typing a text box
+
+How to use Events in ReactJS:
+--use camelCase for event name
+--pass a function to the event(not to function call).This function will run when the event happens
+
+a)onClick();returns when clicked
+
+b)onChange: it occurs when you type in a text box
+KeyPoints:
+Target is a property of the event object,and it is predefined by javascript for DOM events
+
+---event.Target:always refers the elements that triggered the event
+---event.Target.value:used to access the value of the input elements buttons,form elements
+
+c)Mouse Events (onMouseEnter,onMouseLeave)
+These happen when we move the mouse the mouse over or away from the element
+
+d)onKeyDown
+key is pressed on the keyboard
+--onKeyDown={keyDownFunction}
+
+==keyDown function:this is a function that runs whenever any key is pressed on the keyboard
