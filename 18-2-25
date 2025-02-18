@@ -1,0 +1,18 @@
+//////onKeyDown
+
+// import React,{useState} from 'react';
+
+// const App=()=>{
+//     const[message,setMessage]=useState('');
+//     const handleKeyDown=(e)=>{
+//         setMessage(e.target.value);
+//     }
+//     return(
+//         <div>
+//             <h1>Input Field</h1>
+//             <input type='text' onKeyDown={handleKeyDown}/>
+//             <h2>{message}</h2>
+//         </div>
+//     )
+// }
+// export default App;
